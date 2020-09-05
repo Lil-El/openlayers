@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+#map {
+  background-color: #ccc;
+}
