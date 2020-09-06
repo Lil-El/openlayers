@@ -14,6 +14,11 @@ export const routes = [
     name: "2. View定位",
     component: () => import("../views/ViewPosition"),
   },
+  {
+    path: "/ArcGISRESTFeatureService",
+    name: "3. arcgis图层信息(xhr)",
+    component: () => import("../views/ArcGISRESTFeatureService"),
+  },
 ];
 
 const router = new VueRouter({
