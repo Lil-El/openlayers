@@ -29,10 +29,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.tabs {
+  background-color: #fff;
+}
 .tab-title {
   width: 100%;
   display: flex;
-  background-color: #fff;
+  background-color: inherit;
   border-bottom: 1px solid #ccc;
   & > div {
     font-size: 16px;

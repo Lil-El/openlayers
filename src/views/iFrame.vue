@@ -12,8 +12,8 @@ export default {};
 </script>
 <style lang="scss" scoped>
 #frame {
-  height: calc(100vh - 10px);
-  width: calc(100vw - 300px);
+  height: calc(100vh - 20px);
+  width: calc(100vw - 320px);
   // position: absolute;
   // left: -180px;
   // z-index: -1;
