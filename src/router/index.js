@@ -19,6 +19,16 @@ export const routes = [
     name: "3. arcgis图层信息(xhr)",
     component: () => import("../views/ArcGISRESTFeatureService"),
   },
+  {
+    path: "/Basemap",
+    name: "tyxx-1. 底图切换",
+    component: () => import("../views/Basemap"),
+  },
+  {
+    path: "/Measure",
+    name: "tyxx-2. 测距、测面等工具",
+    component: () => import("../views/Measure"),
+  },
 ];
 
 const router = new VueRouter({
