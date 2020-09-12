@@ -20,6 +20,21 @@ export const routes = [
     component: () => import("../views/ArcGISRESTFeatureService"),
   },
   {
+    path: "/ArcGISRESTwith512x512Tiles",
+    name: "4. arcgis-Tile-512x512(xhr)",
+    component: () => import("../views/ArcGISRESTwith512x512Tiles"),
+  },
+  {
+    path: "/Attributions",
+    name: "5. Attributions",
+    component: () => import("../views/Attributions"),
+  },
+  {
+    path: "/BingMaps",
+    name: "6. BingMaps",
+    component: () => import("../views/BingMaps"),
+  },
+  {
     path: "/Basemap",
     name: "tyxx-1. 底图切换",
     component: () => import("../views/Basemap"),

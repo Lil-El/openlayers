@@ -7,6 +7,9 @@
         </Tab>
         <Tab index="API" title="API">
           <div class="list">
+            <!-- <div> -->
+            <input class="filter-input" type="text" v-model="filterKey" @input="handleFilter" />
+            <!-- </div> -->
             <Tree-Menu :item="api" />
           </div>
         </Tab>
@@ -29,7 +32,22 @@ export default {
       activeTab: "Demo",
       demo: routes,
       api: olapi,
+      filterKey: "",
     };
+  },
+  methods: {
+    handleFilter() {
+      if (!this.filterKey) {
+        this.api = olapi;
+        return void 0;
+      }
+      clearTimeout(this.timer);
+      this.timer = setTimeout(() => {
+        this.api = olapi.filter((api) => {
+          return api.name.includes(this.filterKey);
+        });
+      }, 500);
+    },
   },
 };
 </script>
@@ -73,5 +91,14 @@ export default {
       border-radius: 8px;
     }
   }
+}
+.filter-input {
+  width: 86%;
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+  padding: 2px 8px;
+  margin: 4px 10px;
+  font-size: 18px;
 }
 </style>

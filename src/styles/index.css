@@ -8,3 +8,13 @@
 #map {
   background-color: #ccc;
 }
+
+.wrap {
+  height: 100vh;
+  flex: 1;
+}
+
+.wrap #map {
+  height: 100vh;
+  width: 100%;
+}
