@@ -35,6 +35,11 @@ export const routes = [
     component: () => import("../views/BingMaps"),
   },
   {
+    path: "/BoxSelection",
+    name: "7. BoxSelection",
+    component: () => import("../views/BoxSelection"),
+  },
+  {
     path: "/Basemap",
     name: "tyxx-1. 底图切换",
     component: () => import("../views/Basemap"),
