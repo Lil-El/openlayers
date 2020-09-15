@@ -40,6 +40,11 @@ export const routes = [
     component: () => import("../views/BoxSelection"),
   },
   {
+    path: "/WFS_GetFeature",
+    name: "8. WFS_GetFeature",
+    component: () => import("../views/WFS_GetFeature"),
+  },
+  {
     path: "/Basemap",
     name: "tyxx-1. 底图切换",
     component: () => import("../views/Basemap"),
