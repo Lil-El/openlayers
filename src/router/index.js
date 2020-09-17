@@ -1,60 +1,11 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
+import tyxx from "./modules/tyxx";
+import demo from "./modules/demo";
+import api from "./modules/api";
 Vue.use(VueRouter);
 
-export const routes = [
-  {
-    path: "/",
-    name: "1. 创建地图",
-    component: () => import("../views/FirstMap.vue"),
-  },
-  {
-    path: "/ViewPosition",
-    name: "2. View定位",
-    component: () => import("../views/ViewPosition"),
-  },
-  {
-    path: "/ArcGISRESTFeatureService",
-    name: "3. arcgis图层信息(xhr)",
-    component: () => import("../views/ArcGISRESTFeatureService"),
-  },
-  {
-    path: "/ArcGISRESTwith512x512Tiles",
-    name: "4. arcgis-Tile-512x512(xhr)",
-    component: () => import("../views/ArcGISRESTwith512x512Tiles"),
-  },
-  {
-    path: "/Attributions",
-    name: "5. Attributions",
-    component: () => import("../views/Attributions"),
-  },
-  {
-    path: "/BingMaps",
-    name: "6. BingMaps",
-    component: () => import("../views/BingMaps"),
-  },
-  {
-    path: "/BoxSelection",
-    name: "7. BoxSelection",
-    component: () => import("../views/BoxSelection"),
-  },
-  {
-    path: "/WFS_GetFeature",
-    name: "8. WFS_GetFeature",
-    component: () => import("../views/WFS_GetFeature"),
-  },
-  {
-    path: "/Basemap",
-    name: "tyxx-1. 底图切换",
-    component: () => import("../views/Basemap"),
-  },
-  {
-    path: "/Measure",
-    name: "tyxx-2. 测距、测面等工具",
-    component: () => import("../views/Measure"),
-  },
-];
+export const routes = [...demo, ...tyxx, ...api];
 
 const router = new VueRouter({
   mode: "history",
