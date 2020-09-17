@@ -58,18 +58,12 @@ export default {
         this.listeners.forEach((listener) => {
           unByKey(listener);
         });
-      if (type === "point") {
-        this.handlePoint();
-      } else this.handlePolygon(type);
+      this.handlePolygon(type);
     },
-    handlePoint() {
-      let listener = this.map.on("click", () => {
-        let point = new Point(evt.coordinate);
-        this.fetchWFSService(point);
-      });
-      this.listeners.push(listener);
-    },
-    handleRolygon(type) {
+    /**
+     * @description 处理点、矩形、多边形的框选查询
+     */
+    handlePolygon(type) {
       // 使用dragbox框选，然后将geometry传给wfs进行查询
       // drawend时，将Draw的interaction和layer删除
       let geometryFunction = createBox();
@@ -235,6 +229,10 @@ export default {
       });
       this.map.getOverlays().forEach((overlay) => {
         if (overlay?.id === "Identify-Overlay") this.map.removeOverlay(overlay);
+      });
+      this.map.getInteractions().forEach((interaction) => {
+        if (interaction.get("id") === "Identify-Interaction")
+          this.map.removeInteraction(interaction);
       });
       this.listeners &&
         this.listeners.forEach((listene) => {
