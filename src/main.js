@@ -4,7 +4,14 @@ import router from "./router";
 import store from "./store";
 import "./styles/index.scss";
 import "ol/ol.css";
+import Tool from "./components/Tool.vue";
 Vue.config.productionTip = false;
+
+Vue.use({
+  install: (Vue) => {
+    Vue.component("Tool", Tool);
+  },
+});
 
 new Vue({
   router,

@@ -43,4 +43,34 @@
 
 ### 8
 
+使用 canvas tile 查看地图的 tile 网格
+
+### 9
+
+点 feature 进行聚类
+
+### 10
+
+约束 extent，只在规定范围内查看；监听键盘事件，添加 zoom 控件
+
+### 11
+
+使用 postrender 和 vectorContext 来为 feature 做一个动画效果。feature 被添加到这个 layer 时做一个 flash 动画。
+
+### 12
+
+TODO: Custom Controls
+
+### N
+
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
+
+## Demo
+
+> 这些例子暂时用不到，就不写了
+
+- [CartoDB source example][1]：使用 CartoDB 加载、配置地图
+- [Color Manipulation][2]：raster source 操纵地图颜色
+
+[1]: https://openlayers.org/en/latest/examples/cartodb.html
+[2]: https://openlayers.org/en/latest/examples/color-manipulation.html

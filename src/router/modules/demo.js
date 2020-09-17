@@ -35,8 +35,28 @@ export default [
     component: () => import("../../views/BoxSelection"),
   },
   {
+    path: "/CanvasTiles",
+    name: "8. CanvasTiles",
+    component: () => import("../../views/CanvasTiles"),
+  },
+  {
+    path: "/ClusteredFeatures",
+    name: "9. ClusteredFeatures",
+    component: () => import("../../views/ClusteredFeatures"),
+  },
+  {
+    path: "/ConstrainedExtent",
+    name: "10. ConstrainedExtent",
+    component: () => import("../../views/ConstrainedExtent"),
+  },
+  {
+    path: "/CustomAnimation",
+    name: "11. CustomAnimation",
+    component: () => import("../../views/CustomAnimation"),
+  },
+  {
     path: "/WFS_GetFeature",
-    name: "8. WFS_GetFeature",
+    name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),
   },
 ];
