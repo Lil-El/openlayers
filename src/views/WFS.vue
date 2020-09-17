@@ -60,11 +60,7 @@ export default {
         });
       if (type === "point") {
         this.handlePoint();
-      } else if (type === "rectangle") {
-        this.handleRect();
-      } else {
-        this.handlePolygon();
-      }
+      } else this.handlePolygon(type);
     },
     handlePoint() {
       let listener = this.map.on("click", () => {
@@ -73,19 +69,21 @@ export default {
       });
       this.listeners.push(listener);
     },
-    handleRect() {
+    handleRolygon(type) {
       // 使用dragbox框选，然后将geometry传给wfs进行查询
       // drawend时，将Draw的interaction和layer删除
       let geometryFunction = createBox();
       let source = new VectorSource();
-      let vector = new VectorLayer({
+      let options = {
         source,
-      });
-      let drawBox = new Draw({
-        source,
-        type: "Circle",
-        geometryFunction,
-      });
+        type,
+      };
+      // 如果是矩形就要使用createBox；如果是多边形就不用（矩形和多边形就这点区别）
+      // 矩形的type为Circle；多边形的type为Polygon
+      if (type === this.GeometryType.CIRCLE)
+        options.geometryFunction = createBox();
+      let vector = new VectorLayer({ source });
+      let drawBox = new Draw(options);
       let selected;
       drawBox.on("drawstart", (ev) => {
         selected = [];
@@ -100,7 +98,7 @@ export default {
       this.map.addLayer(vector);
       this.map.addInteraction(drawBox);
     },
-    handlePolygon() {},
+
     async fetchWFSService(geometry) {
       let features;
       try {
