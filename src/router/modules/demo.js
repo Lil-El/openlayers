@@ -55,6 +55,36 @@ export default [
     component: () => import("../../views/CustomAnimation"),
   },
   {
+    path: "/CustomControl",
+    name: "12. CustomControl",
+    component: () => import("../../views/CustomControl"),
+  },
+  {
+    path: "/CustomInteraction",
+    name: "13. CustomInteraction",
+    component: () => import("../../views/CustomInteraction"),
+  },
+  {
+    path: "/CustomMap",
+    name: "14. CustomMap-web component",
+    component: () => import("../../views/CustomMap"),
+  },
+  {
+    path: "/CustomOverviewMap",
+    name: "15. CustomOverviewMap",
+    component: () => import("../../views/CustomOverviewMap"),
+  },
+  {
+    path: "/CustomPolygonStyle",
+    name: "16. CustomPolygonStyle",
+    component: () => import("../../views/CustomPolygonStyle"),
+  },
+  {
+    path: "/CustomWMSTile",
+    name: "17. CustomWMSTile-投影坐标转换",
+    component: () => import("../../views/CustomWMSTile"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),

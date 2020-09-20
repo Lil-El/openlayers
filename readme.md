@@ -43,6 +43,7 @@
 
 ### 8
 
+x
 使用 canvas tile 查看地图的 tile 网格
 
 ### 9
@@ -59,7 +60,27 @@
 
 ### 12
 
-TODO: Custom Controls
+自定义 control，初始时地图倾斜，点击变正
+
+### 13
+
+自定义 interaction，实现元素可以拖动
+
+### 14
+
+自定义 Map（Web-Component）
+
+### 15
+
+自定义 Overview Map 控件
+
+### 16
+
+自定义 Polygon 样式
+
+### 17
+
+自定义 WMS，投影坐标转换
 
 ### N
 

@@ -3,7 +3,7 @@
     <div class="nav">
       <Tabs v-model="activeTab">
         <Tab index="Demo" title="Demo">
-          <Tree-Menu :item="demo" />
+          <Tree-Menu class="list" :item="demo" />
         </Tab>
         <Tab index="API" title="API">
           <div class="list">

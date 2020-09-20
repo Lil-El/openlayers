@@ -7,6 +7,11 @@ import "ol/ol.css";
 import { Map, View } from "ol";
 import OSM from "ol/source/OSM";
 import Tile from "ol/layer/Tile";
+import {
+  OverviewMap,
+  ScaleLine,
+  defaults as defaultControls,
+} from "ol/control";
 export default {
   data() {
     return { map: null };
@@ -17,6 +22,10 @@ export default {
   methods: {
     initMap() {
       this.map = new Map({
+        controls: defaultControls().extend([
+          new OverviewMap(),
+          new ScaleLine(),
+        ]),
         target: "map",
         view: new View({
           center: [0, 0],
