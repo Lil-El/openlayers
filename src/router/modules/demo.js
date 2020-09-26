@@ -85,6 +85,36 @@ export default [
     component: () => import("../../views/CustomWMSTile"),
   },
   {
+    path: "/DragRotateZoom",
+    name: "18. DragRotateZoom",
+    component: () => import("../../views/DragRotateZoom"),
+  },
+  {
+    path: "/Drag-and-Drop",
+    name: "19. Drag-and-Drop",
+    component: () => import("../../views/Drag-and-Drop"),
+  },
+  {
+    path: "/Draw",
+    name: "20. Draw",
+    component: () => import("../../views/Draw"),
+  },
+  {
+    path: "/DrawShapes",
+    name: "21. DrawShapes",
+    component: () => import("../../views/DrawShapes"),
+  },
+  {
+    path: "/DrawModifyFeatures",
+    name: "21. DrawModifyFeatures",
+    component: () => import("../../views/DrawModifyFeatures"),
+  },
+  {
+    path: "/DynamicData",
+    name: "22. DynamicData",
+    component: () => import("../../views/DynamicData"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),

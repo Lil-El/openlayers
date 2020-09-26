@@ -82,6 +82,30 @@ x
 
 自定义 WMS，投影坐标转换
 
+### 18
+
+Drag, Rotate, and Zoom；拖放选择缩放级别
+
+### 19
+
+[Drag-and-Drop][3]：shift+鼠标，选取范围，并 fit 至该选中区域
+
+### 20
+
+Draw 绘制点、线、面、曲线、圆；shift 可以绘制曲线
+
+### 21
+
+Draw Shapes 绘制形状
+
+### 22
+
+Draw and Modify Features，绘制点、线、面等，并对绘制好的进行修改
+
+### 23
+
+Dynamic Data，动态、移动的数据
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
@@ -95,3 +119,4 @@ x
 
 [1]: https://openlayers.org/en/latest/examples/cartodb.html
 [2]: https://openlayers.org/en/latest/examples/color-manipulation.html
+[3]: https://openlayers.org/en/latest/examples/drag-and-drop-image-vector.html

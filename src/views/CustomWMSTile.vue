@@ -31,7 +31,7 @@ export default {
      *  我们还声明了EPSG：21781 / EPSG：4326转换函数。
         这些函数对于ScaleLine控件以及在调用ol / proj〜transform时是必需的
         用于设置视图的初始中心
-     */
+     *                                                      /
     addCoordinateTransforms(
       "EPSG:4326", //source
       projection, //dest
@@ -40,7 +40,7 @@ export default {
         return [
           WGStoCHy(coordinate[1], coordinate[0]),
           WGStoCHx(coordinate[1], coordinate[0]),
-        ];
+        ];                                
       },
       // 和上面相反
       function (coordinate) {
