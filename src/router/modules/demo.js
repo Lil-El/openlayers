@@ -106,13 +106,28 @@ export default [
   },
   {
     path: "/DrawModifyFeatures",
-    name: "21. DrawModifyFeatures",
+    name: "22. DrawModifyFeatures",
     component: () => import("../../views/DrawModifyFeatures"),
   },
   {
     path: "/DynamicData",
-    name: "22. DynamicData",
+    name: "23. DynamicData",
     component: () => import("../../views/DynamicData"),
+  },
+  {
+    path: "/EarthquakesKML",
+    name: "24. EarthquakesKML",
+    component: () => import("../../views/EarthquakesKML"),
+  },
+  {
+    path: "/EarthquakeHeatMap",
+    name: "25. EarthquakeHeatMap",
+    component: () => import("../../views/EarthquakeHeatMap"),
+  },
+  {
+    path: "/EarthquakeClusters",
+    name: "26. EarthquakeClusters",
+    component: () => import("../../views/EarthquakeClusters"),
   },
   {
     path: "/WFS_GetFeature",

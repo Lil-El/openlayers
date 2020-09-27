@@ -19,4 +19,9 @@ export default [
     name: "tyxx-4. WFS空间查询",
     component: () => import("../../views/WFS"),
   },
+  {
+    path: "/Double",
+    name: "tyxx-5. Double",
+    component: () => import("../../views/Double"),
+  },
 ];

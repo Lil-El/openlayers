@@ -106,6 +106,20 @@ Draw and Modify Features，绘制点、线、面等，并对绘制好的进行�
 
 Dynamic Data，动态、移动的数据
 
+### 24
+
+Earthquakes in KML，地震信息用 KML 格式文件
+
+### 25
+
+Earthquake Heat map，地震信息的热力图
+
+### 26
+
+Earthquake Clusters，地震信息的点集群图
+
+> TODO:Earthquakes with custom symbols
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
