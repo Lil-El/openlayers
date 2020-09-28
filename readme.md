@@ -150,6 +150,22 @@ Filtering features with WebGL，使用 webGL 渲染 feature，通过年份过滤
 
 Flight Animation，航线动画
 
+### 35
+
+Geographic Editing，编辑 feature
+
+### 36
+
+GeoJSON
+
+### 37
+
+Hit Tolerance，点击容差：点击的位置加上容差；容差 = 10； 搜索 10 范围的 feature
+
+### 38
+
+High DPI WMTS
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中

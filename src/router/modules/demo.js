@@ -170,6 +170,26 @@ export default [
     component: () => import("../../views/FlightAnimation"),
   },
   {
+    path: "/Geographic Editing",
+    name: "35. Geographic Editing",
+    component: () => import("../../views/GeographicEditing"),
+  },
+  {
+    path: "/GeoJSON",
+    name: "36. GeoJSON",
+    component: () => import("../../views/GeoJSON"),
+  },
+  {
+    path: "/Hit Tolerance",
+    name: "37. Hit Tolerance",
+    component: () => import("../../views/HitTolerance"),
+  },
+  {
+    path: "/High DPI WMTS",
+    name: "38. High DPI WMTS",
+    component: () => import("../../views/HighDPIWMTS"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),
