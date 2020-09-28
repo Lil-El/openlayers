@@ -21,14 +21,14 @@ export default {
   methods: {
     initMap() {
       this.map = new Map({
-        controls: defaultControls().extend([
-          new OverviewMap(),
-          new ScaleLine(),
-        ]),
+        // controls: defaultControls().extend([
+        //   new OverviewMap(),
+        //   new ScaleLine(),
+        // ]),
         target: "map",
         view: new View({
           center: [0, 0],
-          zoom: 12,
+          zoom: 2,
         }),
         layers: [
           new Tile({
