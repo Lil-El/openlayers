@@ -120,14 +120,54 @@ export default [
     component: () => import("../../views/EarthquakesKML"),
   },
   {
+    path: "/EarthquakesSymbols",
+    name: "25. EarthquakesSymbols",
+    component: () => import("../../views/EarthquakesSymbols"),
+  },
+  {
     path: "/EarthquakeHeatMap",
-    name: "25. EarthquakeHeatMap",
+    name: "26. EarthquakeHeatMap",
     component: () => import("../../views/EarthquakeHeatMap"),
   },
   {
     path: "/EarthquakeClusters",
-    name: "26. EarthquakeClusters",
+    name: "27. EarthquakeClusters",
     component: () => import("../../views/EarthquakeClusters"),
+  },
+  {
+    path: "/EPSG4326",
+    name: "28. EPSG4326",
+    component: () => import("../../views/EPSG4326"),
+  },
+  {
+    path: "/ExtentInteraction",
+    name: "29. Extent Interaction",
+    component: () => import("../../views/ExtentInteraction"),
+  },
+  {
+    path: "/ExportPDF",
+    name: "30. Export PDF",
+    component: () => import("../../views/ExportPDF"),
+  },
+  {
+    path: "/FreehandDrawing",
+    name: "31. Freehand Drawing",
+    component: () => import("../../views/FreehandDrawing"),
+  },
+  {
+    path: "/FullScreen",
+    name: "32. FullScreen",
+    component: () => import("../../views/FullScreen"),
+  },
+  {
+    path: "/Filtering features with WebGL",
+    name: "33. Filtering features with WebGL",
+    component: () => import("../../views/FilteringFeaturesWithWebGL"),
+  },
+  {
+    path: "/Flight Animation",
+    name: "34. Flight Animation",
+    component: () => import("../../views/FlightAnimation"),
   },
   {
     path: "/WFS_GetFeature",

@@ -112,13 +112,43 @@ Earthquakes in KML，地震信息用 KML 格式文件
 
 ### 25
 
-Earthquake Heat map，地震信息的热力图
+Earthquakes with custom symbols
 
 ### 26
 
+Earthquake Heat map，地震信息的热力图
+
+### 27
+
 Earthquake Clusters，地震信息的点集群图
 
-> TODO:Earthquakes with custom symbols
+### 28
+
+EPSG:4326
+
+### 29
+
+Extent Interaction，使用 shift 可以选择区域，并修改
+
+### 30
+
+Export PDF，生成 pdf
+
+### 31
+
+Freehand Drawing，任意绘制线、面
+
+### 32
+
+FullScreen，全屏
+
+### 33
+
+Filtering features with WebGL，使用 webGL 渲染 feature，通过年份过滤 feature
+
+### 34
+
+Flight Animation，航线动画
 
 ### N
 
