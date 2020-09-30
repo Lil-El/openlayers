@@ -190,6 +190,21 @@ export default [
     component: () => import("../../views/HighDPIWMTS"),
   },
   {
+    path: "/Icon Colors",
+    name: "39. Icon Colors",
+    component: () => import("../../views/IconColors"),
+  },
+  {
+    path: "/Image Reprojection",
+    name: "40. Image Reprojection",
+    component: () => import("../../views/ImageReprojection"),
+  },
+  {
+    path: "/ImmediateRendering",
+    name: "41. ImmediateRendering",
+    component: () => import("../../views/ImmediateRendering"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),

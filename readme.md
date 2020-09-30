@@ -166,11 +166,21 @@ Hit Tolerance，点击容差：点击的位置加上容差；容差 = 10； 搜�
 
 High DPI WMTS
 
+### 40
+
+Image Reprojection
+
+### 41
+
+Immediate Rendering (Geographic)：点闪烁动画渲染
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
 
 ## Demo
+
+Image Filter：图像滤镜
 
 > 这些例子暂时用不到，就不写了
 
