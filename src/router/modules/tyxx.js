@@ -24,4 +24,9 @@ export default [
     name: "tyxx-5. Double",
     component: () => import("../../views/Double"),
   },
+  {
+    path: "/Paint",
+    name: "tyxx-5. 标绘",
+    component: () => import("../../views/Paint"),
+  },
 ];
