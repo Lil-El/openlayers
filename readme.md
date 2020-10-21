@@ -174,6 +174,14 @@ Image Reprojection
 
 Immediate Rendering (Geographic)：点闪烁动画渲染
 
+### 42
+
+Layer Group
+
+### 43
+
+Layer Min/Max Resolution
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
@@ -181,7 +189,8 @@ Immediate Rendering (Geographic)：点闪烁动画渲染
 ## Demo
 
 Image Filter：图像滤镜
-
+KML：KML格式
+Layer Clipping：裁剪地图外形，展示形状内的地图
 > 这些例子暂时用不到，就不写了
 
 - [CartoDB source example][1]：使用 CartoDB 加载、配置地图

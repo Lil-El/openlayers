@@ -205,6 +205,16 @@ export default [
     component: () => import("../../views/ImmediateRendering"),
   },
   {
+    path: "/LayerGroup",
+    name: "42. LayerGroup",
+    component: () => import("../../views/LayerGroup"),
+  },
+  {
+    path: "/Resolution",
+    name: "43. Min/Max Resolution",
+    component: () => import("../../views/Resolution"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),
