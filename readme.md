@@ -182,6 +182,60 @@ Layer Group
 
 Layer Min/Max Resolution
 
+### 44
+
+Layer Spy：只展示鼠标周围的图层
+
+### 45
+
+Layer Swipe
+
+### 46
+
+Layer Zoom Limits：限制 zoom 级别，和 43 类似
+
+### 47
+
+LineString Arrows
+
+### 48
+
+Map Graticule：地图标线图层
+
+### 49
+
+Measure
+
+### 50
+
+Modify Features
+
+### 51
+
+Mouse Position：使用自带的对象，显示实时坐标
+
+### 52
+
+Moveend Event：监听 moveend 事件，去显示地图的范围的 4 个点的坐标
+
+### 53
+
+Navigation Controls：使用内置的 control，实现一键定位
+
+### 54
+
+Marker Animation：marker 跟随轨迹移动
+
+### 55
+
+Overview Map Control：显示小地图
+
+### 56
+
+Pinch Zoom：默认情况下，ol / interaction / PinchZoom 可以使地图处于分数缩放级别。相反，如果要将收缩缩放限制为整数缩放级别，则在构造视图时将 constrainResolution：true 设置为 true。
+
+### TODO:R
+
 ### N
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
@@ -189,8 +243,15 @@ Layer Min/Max Resolution
 ## Demo
 
 Image Filter：图像滤镜
-KML：KML格式
+KML：KML 格式
 Layer Clipping：裁剪地图外形，展示形状内的地图
+Limited Layer Extent：底图 1，然后选择展示不同国家的区域，该区域内是底图 2；（控制底图 2 的 extent）
+Magnify：放大镜
+Map Export：将底图导出为图片 png
+Modify Features Test：修改 geojson 加载的图形的 feature
+OpenStreetMap Reprojection with ScaleLine Control：OSM 使用新的坐标系，并显示 scale line 控件
+Panning and page scrolling：此示例显示了页面滚动的常见行为：在触摸设备上，将一根手指放在地图上时，可以使用它来滚动页面。只有两个手指才能执行拖动平移。对于鼠标或触控板设备，平台修饰键（Cmd 或 Ctrl）将在地图上启用拖动平移，否则页面将滚动。
+
 > 这些例子暂时用不到，就不写了
 
 - [CartoDB source example][1]：使用 CartoDB 加载、配置地图

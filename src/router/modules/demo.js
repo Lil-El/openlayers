@@ -215,6 +215,71 @@ export default [
     component: () => import("../../views/Resolution"),
   },
   {
+    path: "/Spy",
+    name: "44. Layer Spy",
+    component: () => import("../../views/Spy"),
+  },
+  {
+    path: "/Swipe",
+    name: "45. Layer Swipe",
+    component: () => import("../../views/Swipe"),
+  },
+  {
+    path: "/ZoomLimits",
+    name: "46. Layer Zoom Limits",
+    component: () => import("../../views/ZoomLimits"),
+  },
+  {
+    path: "/LineStringArrows",
+    name: "47. LineString Arrows",
+    component: () => import("../../views/LineStringArrows"),
+  },
+  {
+    path: "/MapGraticule",
+    name: "48. Map Graticule",
+    component: () => import("../../views/MapGraticule"),
+  },
+  {
+    path: "/Measure_Example",
+    name: "49. Measure",
+    component: () => import("../../views/Measure_Example"),
+  },
+  {
+    path: "/ModifyFeatures",
+    name: "50. Modify Features",
+    component: () => import("../../views/ModifyFeatures"),
+  },
+  {
+    path: "/MousePosition",
+    name: "51. Mouse Position",
+    component: () => import("../../views/MousePosition"),
+  },
+  {
+    path: "/MoveendEvent",
+    name: "52. Moveend Event",
+    component: () => import("../../views/MoveendEvent"),
+  },
+  {
+    path: "/NavigationControls",
+    name: "53. Navigation Controls",
+    component: () => import("../../views/NavigationControls"),
+  },
+  {
+    path: "/MarkerAnimation",
+    name: "54. Marker Animation",
+    component: () => import("../../views/MarkerAnimation"),
+  },
+  {
+    path: "/OverviewMapControl",
+    name: "55. Overview Map Controln",
+    component: () => import("../../views/OverviewMapControl"),
+  },
+  {
+    path: "/PinchZoom",
+    name: "56. Pinch Zoom",
+    component: () => import("../../views/PinchZoom"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),
