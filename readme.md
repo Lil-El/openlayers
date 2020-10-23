@@ -234,7 +234,41 @@ Overview Map Control：显示小地图
 
 Pinch Zoom：默认情况下，ol / interaction / PinchZoom 可以使地图处于分数缩放级别。相反，如果要将收缩缩放限制为整数缩放级别，则在构造视图时将 constrainResolution：true 设置为 true。
 
-### TODO:R
+### 57
+
+Reprojection with EPSG.io Search：搜索 proj4，并注册，展示
+
+### 58
+
+Reusable Source：更换 tile 的 source 的 url
+
+### 59
+
+Scale Line：显示比例尺
+
+### 60
+
+Select Features：点击、单击、hover 等选择 feature；使用 interactions
+
+### 61
+
+Select Features by Hover：hover 时选择 feature；监听 map 的 move 事件，获取 feature 信息
+
+### 62
+
+Select Features by multiple：选择多个 feature
+
+### 63
+
+Smoothing lines using Chaikins algorithm：绘制光滑曲线
+
+### 64
+
+Stamen Tiles：水彩
+
+### 65
+
+Snap Interaction：绘制点、线图形，并修改
 
 ### N
 
@@ -251,6 +285,13 @@ Map Export：将底图导出为图片 png
 Modify Features Test：修改 geojson 加载的图形的 feature
 OpenStreetMap Reprojection with ScaleLine Control：OSM 使用新的坐标系，并显示 scale line 控件
 Panning and page scrolling：此示例显示了页面滚动的常见行为：在触摸设备上，将一根手指放在地图上时，可以使用它来滚动页面。只有两个手指才能执行拖动平移。对于鼠标或触控板设备，平台修饰键（Cmd 或 Ctrl）将在地图上启用拖动平移，否则页面将滚动。
+Sea Level：通过 select 去设置海平面的高度，并在地图上显示淹没的区域
+Semi-Transparent Layer：使用 css filter，将 layer 变为黑白色
+Shaded Relief：使用 raster 栅格 source，修改地图太阳的位置，模拟地图的阴影
+Shared Views：两个地图使用同一个 View 对象，实现两个地图联动
+Single Image WMS：使用 WMS 服务
+Single Image WMS with Proj4js：WMS 服务，注册 projection
+Street Labels：让道路标签，沿着街道的方向展示
 
 > 这些例子暂时用不到，就不写了
 

@@ -280,6 +280,51 @@ export default [
     component: () => import("../../views/PinchZoom"),
   },
   {
+    path: "/Reprojection",
+    name: "57. Reprojection with EPSG.io Search",
+    component: () => import("../../views/Reprojection"),
+  },
+  {
+    path: "/ReusableSource",
+    name: "58. Reusable Source",
+    component: () => import("../../views/ReusableSource"),
+  },
+  {
+    path: "/ScaleLine",
+    name: "59. Scale Line",
+    component: () => import("../../views/ScaleLine"),
+  },
+  {
+    path: "/SelectFeatures",
+    name: "60. Select Features",
+    component: () => import("../../views/SelectFeatures"),
+  },
+  {
+    path: "/SelectFeaturesHover",
+    name: "61. Select Features By Hover",
+    component: () => import("../../views/SelectFeaturesHover"),
+  },
+  {
+    path: "/SelectFeaturesMultiple",
+    name: "62. Select Features By Multiple",
+    component: () => import("../../views/SelectFeaturesMultiple"),
+  },
+  {
+    path: "/SmoothingLines",
+    name: "63. Smoothing lines using Chaikins algorithm",
+    component: () => import("../../views/SmoothingLines"),
+  },
+  {
+    path: "/StamenTiles",
+    name: "64. Stamen Tiles",
+    component: () => import("../../views/StamenTiles"),
+  },
+  {
+    path: "/SnapInteraction",
+    name: "65. Snap Interaction",
+    component: () => import("../../views/SnapInteraction"),
+  },
+  {
     path: "/WFS_GetFeature",
     name: "N. WFS_GetFeature",
     component: () => import("../../views/WFS_GetFeature"),
