@@ -274,6 +274,11 @@ Snap Interaction：绘制点、线图形，并修改
 
 加载 WFS 服务，并通过 Filter 过滤 Features；将查询的 Features 展示在 map 中
 
+
+### bdhj-1
+
+使用ol加载ArcGis Map Server服务
+
 ## Demo
 
 Image Filter：图像滤镜

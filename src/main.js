@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import "./styles/index.scss";
 import "ol/ol.css";
+import "@arcgis/core/assets/esri/themes/light/main.css";
 import Tool from "./components/Tool.vue";
 Vue.config.productionTip = false;
 

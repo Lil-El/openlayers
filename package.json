@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@arcgis/core": "^4.27.6",
     "chaikin-smooth": "^1.0.4",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
